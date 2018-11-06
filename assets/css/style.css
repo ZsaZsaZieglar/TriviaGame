@@ -1,5 +1,5 @@
 body {
-    background-image: url("assets/images/quizzes.jpg");
+    background-image: url("../images/quizzes.jpg");
     background-color:red; 
  }
 
@@ -7,8 +7,16 @@ body {
     background-color: black;
  }
 
+ p {
+     color:white;
+ }
+
  h1 {
      background-color: blueviolet;
+ }
+
+ h2 {
+     color: white;
  }
 
  h3 {
@@ -16,20 +24,45 @@ body {
     border-bottom-style: groove;
  }
 
+ h3 {
+     color: white;
+ }   
+     
+
+
  h4 {
      color: white;
  }
 
- .quiz {
-     margin-top: 30px;
+div .questionArea {
+    text-align: justify;
+    color: white;
+}
+ .ask {
+    text-align: justify;
+    color: white;
+}
+ .resultsArea {
+     margin-top: 200px;
  }
 
- .results {
-     margin-top: 40px;
+ .controller {
+     margin-top: 30px;
+     margin-right: 30px;
  }
- 
- .col-lg-6 {
-     margin-top:60px;
+
+ .col-lg-4 button {
+    background-color: rgb(157, 231, 19);
+    border: none;
+    color: darkmagenta;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+    margin: 2px 2px 80px 80px;
+    cursor: pointer;
  }
 
  

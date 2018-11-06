@@ -22,31 +22,61 @@
 
         <div class="card">
                 <div class="card-body countDown">
-                   <h4 class="timer"><em>The time remaining is:</em></h4>
+                   <h4 class="countDown"><span id="timer"><em>The time remaining is:</em></span></h4>
                 </div>   <!-- End CountDown Div -->
         </div>
 
-        <div class="row">
+
+        
+
+        <div class="row questionArea">
                 <div class="col-lg-12 quiz">                
-                   <h2>Questions</h2>                   
+                   <h2 id="questions">Questions:</h2>
+                   <form>
+                    What color do you prefer?<br>
+                    <input type="radio" name="colors" id="red">Red<br>
+                    <input type="radio" name="colors" id="blue">Blue
+                  </form>
+
+                   <form class="ask">"Name the school that Harry Potter attended?"<br />
+                      <input type="radio" name="quest1" id="A">  a. Hagedorn</br />
+                      <input type="radio" name="quest2" id="B">  b. Hogwarts<br />
+                      <input type="radio" name="quest3" id="C">  c. Nottingham<br />
+                   </form> 
+
+                   <form class="ask">"What is the distance around a circle called?"<br />
+                      <input type="radio" name="quest4" id="A"> a. Radius<br>
+                      <input type="radio" name="quest5" id="B"> b. Diameter<br>
+                      <input type="radio" name="quest6" id="C"> c. Circumference<br>
+                   </form>
+                     
+                   <form class="ask">"What is the top colour in a rainbow?"<br>
+                      <input type="radio" name="quest7" id="A"> a: Red<br>
+                      <input type="radio" name="quest8" id="B"> b: Yellow<br>
+                      <input type="radio" name="quest9" id="C"> c: Blue"<br> 
+                   </form>                       
                 </div>        
         </div>   <!-- End Question Div -->
     
-        <div class="row">
+        <div class="row resultsArea">
             <div class="col-lg-12 results">
-                    <h3 id="yourResults">Your Results</h3>
+                    <h3 id="yourResults">Your Results:</h3>
                         <h4 id="correctAns">Correct Answers:</h4>
                         <h4 id="incorrectAns">Incorrect Answers:</h4>                                                            
             </div>         
         </div>   <!-- End Results Div -->
 
-        <div class="row">            
-            <div class="col-lg-6">
-                    <button id="start">PLAY</button>     <!-- Start the Game-->                                  
+        <div class="row controller">            
+            <div class="col-lg-4">
+                   <button id="start">PLAY</button>     <!-- Start the Game-->                                  
            </div>   
             
-           <div class="col-lg-6">                  
-                <button id="submit">Submit</button>  <!-- Submit user's answers-->
+           <div class="col-lg-4">                  
+                   <button id="submit">SUBMIT</button>  <!-- Submit user's answers-->
+           </div> 
+           
+           <div class="col-lg-4">                  
+                  <button id="done">FINISH</button>  <!-- Submit user's answers-->
            </div>        
        </div>   <!-- End Buttons -->
         
